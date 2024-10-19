@@ -405,3 +405,57 @@
 .image-container:hover .hover-image {
     opacity: 1; /* Afficher l'image de survol au survol */
 }
+
+
+
+/* CSS pour la responsivité des images et des sections */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajuster les sections pour les écrans plus petits */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-width: 80px;
+    }
+
+    #hero .col-md-6, #about .col-md-6 {
+        text-align: center;
+    }
+
+    /* Alignement vertical du texte et des images */
+    #hero, #about {
+        padding: 50px 0;
+    }
+
+    /* Pour la section des compétences */
+    .skills .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Outils section */
+    .outils-section .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustements pour les cartes */
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsivité pour les très petits écrans */
+@media (max-width: 200px) {
+    .navbar-brand img {
+        max-width: 60px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
